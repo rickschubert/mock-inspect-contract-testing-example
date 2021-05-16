@@ -1,0 +1,37 @@
+{
+    "request": {
+        "url": "http://localhost:5000/v1/cities_you_can_fly_to",
+        "method": "POST",
+        "payload": {
+            "type": "object",
+            "properties": {
+                "filterByCountry": {
+                    "type": "string",
+                    "minLength": 1
+                }
+            },
+            "additionalProperties": true,
+            "required": [
+                "filterByCountry"
+            ]
+        },
+        "headers": {
+            "authorization": "Bearer my_API_token_was_used"
+        }
+    },
+    "response": {
+        "body": {
+            "type": "object",
+            "minProperties": 3,
+            "patternProperties": {
+                "^.*$": {
+                    "type": "boolean"
+                }
+            }
+        },
+        "statusCode": 200,
+        "headers": {
+            "content-type": "application/json; charset=utf-8"
+        }
+    }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "mock-inspect-contract-testing-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint --fix \"**/*.js\"",
+    "prettify": "prettier --write \"**/*.js\"",
+    "lintFull": "npm run prettify && npm run lint",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rickschubert/mock-inspect-contract-testing-example.git"
+  },
+  "keywords": [
+    "mock-inspect",
+    "javascript",
+    "contract",
+    "testing",
+    "testing"
+  ],
+  "author": "Rick Schubert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rickschubert/mock-inspect-contract-testing-example/issues"
+  },
+  "homepage": "https://github.com/rickschubert/mock-inspect-contract-testing-example#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  },
+  "devDependencies": {
+    "ajv": "^8.5.0",
+    "eslint": "^7.26.0",
+    "eslint-config-rickschubert": "^1.0.11",
+    "jest": "^26.6.3",
+    "json-schema-faker": "^0.5.0-rcv.34",
+    "mock-inspect": "^4.0.2",
+    "prettier": "^2.3.0"
+  }
+}

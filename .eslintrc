@@ -1,0 +1,26 @@
+{
+    "extends": ["rickschubert"],
+    "root": true,
+    "parserOptions": {
+      "ecmaVersion": "2018",
+      "sourceType": "module",
+      "ecmaFeatures": {
+          "jsx": true
+      }
+  },
+    "rules": {
+      "no-console": 0,
+      "no-template-curly-in-string": 0,
+      "indent": ["error", 4]
+    },
+    "globals": {
+      "jest": true,
+      "beforeEach": true,
+      "beforeAll": true,
+      "afterAll": true,
+      "afterEach": true,
+      "expect": true,
+      "it": true,
+      "describe": true
+    }
+  }
